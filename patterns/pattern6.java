@@ -1,0 +1,23 @@
+package patterns;
+
+import java.util.Scanner;
+
+public class pattern6 {
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+        int n =s.nextInt();
+
+        int rownum=1;
+        int p=1;
+        while(rownum<=n){
+            int colnum=1;
+            while (colnum<=rownum){
+                System.out.print(p);
+                colnum++;
+                p++;
+            }
+            System.out.println();
+            rownum++;
+        }
+    }
+}
